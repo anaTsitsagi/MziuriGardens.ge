@@ -17,3 +17,12 @@
   upwork ის გამოყენებაში აუცილებლად მოგექმარებით და შემიძლია ინსტუქციებიც გადმოგიგზავნოთ თუ რა არის საჭირო პროექტის დასამატებლად და წარმატებით დასახურად :) 
   
 წარმატებები ჩვენ! 
+
+Update/Fix issues for Website
+
+There are several tasks that needs to be done :
+1. Call button to add
+2. add corporate email
+3. update slider
+4. update titles/descriptions in Georgian/Russion/English
+5. update flat renders
