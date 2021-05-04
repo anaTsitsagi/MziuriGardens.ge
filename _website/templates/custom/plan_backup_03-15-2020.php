@@ -85,7 +85,7 @@
 					}
 					?>
 
-					<img src="_website/img/project_image_1.jpg" class="map" id="sadasdada" usemap="#features" alt=""/>
+					<img src="_website/img/project_image_1.jpg?<?php echo time(); ?>" class="map" id="sadasdada" usemap="#features" alt=""/>
 					<map name="features"> 
 						<!-- oleandra-->                       
                         <area size="<div class='FloorToolTip Color1'><span>14 - <?php echo menu_title('8');?><div class='PlanIcon'></div></span><label><?php echo l('left')?> <?=$ole[14]["avaliable"]?> <?php echo l('room')?></label></div>" class="FloorHover" shape="poly" coords="168, 251, 484, 248, 656, 319, 656, 276, 484, 193, 168, 197" href="<?php echo href('81');?>" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'/> 
