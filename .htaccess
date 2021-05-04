@@ -1,0 +1,58 @@
+DirectoryIndex index.php
+
+RewriteOptions inherit
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine On
+# images|styles|scripts|uploads|_manager|_website|_cache|
+RewriteRule ^(images|styles|scripts|uploads|flash|_manager|_website|img|_javascript|.*\.(pem|doc|docx|xls|xlsx|css|js|jpg|JPG|mp3|jpeg|JPEG|gif|GIF|swf|xml|png|PNG|pdf|ico|zip|rar|php|html|txt|sql)) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [QSA,L]
+# block access to some sensible files
+<Files ~ "^sftp-config.json|.gitignore|.sass-cache|.htaccess|.git|node_modules">
+  Order allow,deny
+  Deny from all
+</Files>
+
+# force non-www domain
+RewriteCond %{HTTP_HOST} ^mziurigardens\.ge [NC]
+RewriteCond %{X-FORWARDED-PORT} 80
+RewriteRule ^(.*)$ https://mziurigardens.ge/$1 [R=301,L]
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_value error_reporting E_ALL
+   php_flag display_errors Off
+   php_value max_execution_time 180
+   php_value max_input_time 180
+   php_value max_input_vars 3000
+   php_value memory_limit 512M
+   php_value post_max_size 256M
+   php_value session.gc_maxlifetime 1440
+   #php_value session.save_path "/var/cpanel/php/sessions/ea-php74"
+   php_value upload_max_filesize 128M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_value error_reporting E_ALL
+   php_flag display_errors Off
+   php_value max_execution_time 180
+   php_value max_input_time 180
+   php_value max_input_vars 3000
+   php_value memory_limit 512M
+   php_value post_max_size 256M
+   php_value session.gc_maxlifetime 1440
+  php_value session.save_path "/var/cpanel/php/sessions/ea-php74"
+    php_value upload_max_filesize 128M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
