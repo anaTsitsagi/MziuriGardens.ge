@@ -105,8 +105,8 @@
 						
 						<area size="<div class='FloorToolTip Color1'><span><?php echo menu_title('109');?><div class='PlanIcon'></div></span><label> </label></div>" class="FloorHover" href="<?php echo href('109');?>" coords="172,1572,693,1562,999,1572,993,1662,674,1672,172,1669" shape="poly" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'>
 						
-						<area size="<div class='FloorToolTip Color1'><span><?php echo menu_title('108');?></span><label> </label></div>" class="FloorHover fancybox"  data-fancybox="parking1" coords="172,1669,2338,1656,2831,1665,2831,1765,172,1772" shape="poly" href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'>
-    					<area size="<div class='FloorToolTip Color1'><span><?php echo menu_title('107');?></span><label> </label></div>" class="FloorHover fancybox"  data-fancybox="parking2" coords="162,1772,2831,1766,2834,1872,159,1882" shape="poly" href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'>					   
+						<area size="<div class='FloorToolTip Color1'><span><?php echo menu_title('108');?></span><label> </label></div>" class="FloorHover fancybox"  data-fancybox="parking1" coords="172,1669,2338,1656,2831,1665,2831,1765,172,1772" shape="poly" href="https://mziurigardens.ge/files/flats/parking/garage_2?<?php echo time(); ?>" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'>
+    					<area size="<div class='FloorToolTip Color1'><span><?php echo menu_title('107');?></span><label> </label></div>" class="FloorHover fancybox"  data-fancybox="parking2" coords="162,1772,2831,1766,2834,1872,159,1882" shape="poly" href="https://mziurigardens.ge/files/flats/parking/garage_2?<?php echo time(); ?>" data-maphilight= '{"alwaysOn":false,"strokeColor":"15b99b","strokeWidth":3,"fillColor":"15b99b","fillOpacity":0.8}'>					   
 					 
 					 	<!-- gardens-->     
 					   
@@ -161,19 +161,19 @@
 		
 		<div class="ParkingImagesDiv">
 			<div class="Parking111">
-				<a href="https://mziurigardens.ge/files/flats/parking/garage_1.jpg" data-fancybox="parking1" class="fancybox">
-					<img src="https://mziurigardens.ge/files/flats/parking/garage_1.jpg"/>
+				<a href="https://mziurigardens.ge/files/flats/parking/garage_1.jpg?<?php echo time(); ?>" data-fancybox="parking1" class="fancybox">
+					<img src="https://mziurigardens.ge/files/flats/parking/garage_1.jpg?<?php echo time(); ?>"/>
 				<a>
-				<a href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg" data-fancybox="parking1" class="fancybox">
-					<img src="https://mziurigardens.ge/files/flats/parking/garage_2.jpg"/>
+				<a href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg?<?php echo time(); ?>" data-fancybox="parking1" class="fancybox">
+					<img src="https://mziurigardens.ge/files/flats/parking/garage_2.jpg?<?php echo time(); ?>"/>
 				<a>
 			</div>
 			<div class="Parking222">
-				<a href="https://mziurigardens.ge/files/flats/parking/garage_1.jpg" data-fancybox="parking2" class="fancybox">
-					<img src="https://mziurigardens.ge/files/flats/parking/garage_1.jpg"/>
+				<a href="https://mziurigardens.ge/files/flats/parking/garage_1.jpg?<?php echo time(); ?>" data-fancybox="parking2" class="fancybox">
+					<img src="https://mziurigardens.ge/files/flats/parking/garage_1.jpg?<?php echo time(); ?>"/>
 				<a>
-				<a href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg" data-fancybox="parking2" class="fancybox">
-					<img src="https://mziurigardens.ge/files/flats/parking/garage_2.jpg"/>
+				<a href="https://mziurigardens.ge/files/flats/parking/garage_2.jpg?<?php echo time(); ?>" data-fancybox="parking2" class="fancybox">
+					<img src="https://mziurigardens.ge/files/flats/parking/garage_2.jpg?<?php echo time(); ?>"/>
 				<a>
 			</div>
 		</div>

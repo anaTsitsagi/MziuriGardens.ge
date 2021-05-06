@@ -134,16 +134,16 @@ for($i = 0; $i < count($items); $i++){
 							</div>
 						</div>
 						<div class="FloorImageDiv row20" id="FloorMapID">
-							<div class="LeftTextDiv Tooltip11" data-toggle="tooltip" data-placement="top" title="<?php echo l('mountains');?>"><img src="_website/img/mta.png"/></div>
-							<div class="RightTextDiv Tooltip11" data-toggle="tooltip" data-placement="top" title="<?php echo l('sea');?>"><img src="_website/img/zgva.png"/></div>
+							<div class="LeftTextDiv Tooltip11" data-toggle="tooltip" data-placement="top" title="<?php echo l('mountains');?>"><img src="_website/img/mta.png?<?php echo time(); ?>"/></div>
+							<div class="RightTextDiv Tooltip11" data-toggle="tooltip" data-placement="top" title="<?php echo l('sea');?>"><img src="_website/img/zgva.png?<?php echo time(); ?>"/></div>
 							<div class="MobileFloorInfo">
 								<span><?php echo (int)$title; ?> <?php echo l('floor');?></span>
 								<div class="Btn1"><?php echo l('left');?> <?php echo $left;?> <?php echo l('room');?></div>
 							</div>
                             <?php if($id==102 OR $id==72 OR $id==73 OR $id==74 OR $id==75 OR $id==76 OR $id==77 OR $id==104 OR $id==61 OR $id==62 OR $id==63 OR $id==64 OR $id==65 OR $id==66){ ?>
-							<img src="<?php echo $image1 ?>" class="ImgMap ImgMap22 gflx<?=$maincatid?>-<?=$id?>" usemap="#features" />
+							<img src="<?php echo $image1 ?>?<?php echo time(); ?>" class="ImgMap ImgMap22 gflx<?=$maincatid?>-<?=$id?>" usemap="#features" />
                             <?php }else{ ?>
-                            <img src="<?php echo $image1 ?>" class="ImgMap gflx<?=$maincatid?>-<?=$id?>" usemap="#features" />
+                            <img src="<?php echo $image1 ?>?<?php echo time(); ?>" class="ImgMap gflx<?=$maincatid?>-<?=$id?>" usemap="#features" />
                             <?php } ?>
 							<map name="features">
 								<?php
@@ -216,23 +216,23 @@ for($i = 0; $i < count($items); $i++){
             <a href="<?php echo $link;;?>" class="SoldDiv">
             <div class="Sold">Sold</div>
             <?php if($item['space']==65){?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==46.3) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==68.60) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==70.90) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43.6) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?". time() ./></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==46.7) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==66) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==72.8) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg?<?php echo time(); ?>"/></div>
             <?php }  ?>
 
             <?php echo $item['space'];?>
@@ -242,23 +242,23 @@ for($i = 0; $i < count($items); $i++){
             <a href="<?php echo $link;;?>" class="SoldDiv">
             <div class="Sold">Reserved</div>
             <?php if($item['space']==65){?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==46.3) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==68.60) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==70.90) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43.6) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?" . time() ./></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?<?php echo time(); ?>" /></div>
             <?php } else if ($item['space']==46.7) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==66) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==72.8) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg?<?php echo time(); ?>"/></div>
             <?php }  ?>
 
             <?php echo $item['space'];?>
@@ -267,23 +267,23 @@ for($i = 0; $i < count($items); $i++){
 		<?php } else {?>
             <a href="<?php echo $link;;?>">
             <?php if($item['space']==65){?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==46.3) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==68.60) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==70.90) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/70.90/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==43.6) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?". time() ./></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.6/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==46.7) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46.70/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==66) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/main.jpg?<?php echo time(); ?>"/></div>
             <?php } else if ($item['space']==72.8) { ?>
-            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg"/></div>
+            <div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/main.jpg?<?php echo time(); ?>"/></div>
             <?php }  ?>
 
             <?php echo $item['space'];?>
