@@ -419,14 +419,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4">
-						<div class="Item">
- 							<div class="Title"><?php echo menu_title('101');?></div>
-							<div class="Text">
-								<?php echo text('101');?>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
