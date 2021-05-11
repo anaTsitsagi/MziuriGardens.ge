@@ -48,6 +48,7 @@ for($i = 0; $i < count($items); $i++){
 											<a href="<?php echo href('98');?>">14</a>
                                             <a href="<?php echo href('113');?>">15</a>
                                             <a href="<?php echo href('114');?>">16</a>
+                                            <a href="<?php echo href('117');?>">17</a>
 										</div>
                                     <?php }else if($maincatid==8){ ?>
 										<div class="SlideNum">
@@ -61,7 +62,8 @@ for($i = 0; $i < count($items); $i++){
 											<a href="<?php echo href('82');?>">11</a>
 											<a href="<?php echo href('79');?>">12</a>
 											<a href="<?php echo href('80');?>">13</a>
-											<a href="<?php echo href('81');?>">14</a>
+                                            <a href="<?php echo href('81');?>">14</a>
+                                            <a href="<?php echo href('115');?>">15</a>
 										</div>
                                     <?php }else{ ?>
 										<div class="SlideNum">
@@ -75,7 +77,8 @@ for($i = 0; $i < count($items); $i++){
 											<a href="<?php echo href('71');?>">11</a>
 											<a href="<?php echo href('68');?>">12</a>
 											<a href="<?php echo href('69');?>">13</a>
-											<a href="<?php echo href('70');?>">14</a>
+                                            <a href="<?php echo href('70');?>">14</a>
+                                            <a href="<?php echo href('116');?>">15</a>
 										</div>
                                     <?php } ?>
 									</div>
@@ -101,6 +104,9 @@ for($i = 0; $i < count($items); $i++){
                                         <option value="<?php echo href('96');?>">12</option>
                                         <option value="<?php echo href('97');?>">13</option>
                                         <option value="<?php echo href('98');?>">14</option>
+                                        <option value="<?php echo href('113');?>">15</option>
+                                        <option value="<?php echo href('114');?>">16</option>
+                                        <option value="<?php echo href('117');?>">17</option>
                                     </select>
                                     <?php }else if($maincatid==8){ ?>
                                     <select id="SelectOnChangeValue">
@@ -115,6 +121,7 @@ for($i = 0; $i < count($items); $i++){
                                         <option value="<?php echo href('79');?>">12</option>
                                         <option value="<?php echo href('80');?>">13</option>
                                         <option value="<?php echo href('81');?>">14</option>
+                                        <option value="<?php echo href('115');?>">15</option>
                                     </select>
                                     <?php }else{ ?>
                                     <select id="SelectOnChangeValue">
@@ -129,6 +136,7 @@ for($i = 0; $i < count($items); $i++){
                                         <option value="<?php echo href('68');?>">12</option>
                                         <option value="<?php echo href('69');?>">13</option>
                                         <option value="<?php echo href('70');?>">14</option>
+                                        <option value="<?php echo href('116');?>">15</option>
                                     </select>
                                     <?php } ?>
 							</div>

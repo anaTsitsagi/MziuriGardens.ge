@@ -55,6 +55,9 @@
 											<a href="<?php echo href('96');?>">12</a>
 											<a href="<?php echo href('97');?>">13</a>
 											<a href="<?php echo href('98');?>">14</a>
+											<a href="<?php echo href('113');?>">15</a>
+											<a href="<?php echo href('114');?>">16</a>
+											<a href="<?php echo href('117');?>">17</a>
                                         <?php }else if($parent['id']==8){ ?>
 											<a href="<?php echo href('102');?>">4</a>
 											<a href="<?php echo href('72');?>">5</a>
@@ -67,6 +70,7 @@
 											<a href="<?php echo href('79');?>">12</a>
 											<a href="<?php echo href('80');?>">13</a>
 											<a href="<?php echo href('81');?>">14</a>
+											<a href="<?php echo href('115');?>">15</a>
                                         <?php }else{ ?>
 											<a href="<?php echo href('104');?>">4</a>
 											<a href="<?php echo href('61');?>">5</a>
@@ -79,6 +83,7 @@
 											<a href="<?php echo href('68');?>">12</a>
 											<a href="<?php echo href('69');?>">13</a>
 											<a href="<?php echo href('70');?>">14</a>
+											<a href="<?php echo href('116');?>">15</a>
                                         <?php } ?>
 										</div>
 									</div>
@@ -103,7 +108,10 @@
                                         <option value="<?php echo href('96');?>">11</option>
                                         <option value="<?php echo href('97');?>">12</option>
                                         <option value="<?php echo href('98');?>">13</option>
-                                        <option value="<?php echo href('99');?>">14</option>
+										<option value="<?php echo href('99');?>">14</option>
+										<option value="<?php echo href('113');?>">15</option>
+										<option value="<?php echo href('114');?>">16</option>
+										<option value="<?php echo href('117');?>">17</option>
                                     </select>
                                     <?php }else if($parent['id']==8){ ?>
                                     <select id="SelectOnChangeValue">
@@ -117,7 +125,8 @@
                                         <option value="<?php echo href('79');?>">11</option>
                                         <option value="<?php echo href('80');?>">12</option>
                                         <option value="<?php echo href('81');?>">13</option>
-                                        <option value="<?php echo href('82');?>">14</option>
+										<option value="<?php echo href('82');?>">14</option>
+										<option value="<?php echo href('115');?>">15</option>
                                     </select>
                                     <?php }else{ ?>
                                     <select id="SelectOnChangeValue">
@@ -131,7 +140,9 @@
                                         <option value="<?php echo href('68');?>">11</option>
                                         <option value="<?php echo href('69');?>">12</option>
                                         <option value="<?php echo href('70');?>">13</option>
-                                        <option value="<?php echo href('71');?>">14</option>
+										<option value="<?php echo href('71');?>">14</option>
+										<option value="<?php echo href('116');?>">15</option>
+										
                                     </select>
                                     <?php } ?>
 							</div>
@@ -222,6 +233,42 @@
 									<li><span><?php echo l('s1');?></span><div>25,30 m<label>2</label></div></li>
 									<li><span><?php echo l('wc');?></span><div>4,9 m<label>2</label></div></li>
 									<li><span><?php echo l('balcony');?></span><div>10,45 m<label>2</label></div></li>
+							<?php } else if ($space==48.5) { ?>
+									<li><span><?php echo l('s1');?></span><div>36.10 m<label>2</label></div></li>
+									<li><span><?php echo l('wc');?></span><div>5,3 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>12,40 m<label>2</label></div></li>
+							<?php } else if ($space==60) { ?>
+									<li><span><?php echo l('s1');?></span><div>36.6 m<label>2</label></div></li>
+									<li><span><?php echo l('wc');?></span><div>5,2 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>23.4 m<label>2</label></div></li>
+							<?php } else if ($space==90) { ?>
+									<li><span><?php echo l('hall');?></span><div>5,65 m<label>2</label></div></li>
+									<li><span><?php echo l('s1');?></span><div>22,90 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>11.64 m<label>2</label></div></li>
+									
+									<li><span><?php echo l('bedroom');?></span><div>12.01 m<label>2</label></div></li>
+									<li><span><?php echo l('wc');?></span><div>5,23 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>24,40 m<label>2</label></div></li>
+							<?php } else if ($space==115) { ?>
+									<li><span><?php echo l('hall');?></span><div>9,06 m<label>2</label></div></li>
+									<li><span><?php echo l('s1');?></span><div>28,42 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>17,24 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>15,73 m<label>2</label></div></li>
+									
+									<li><span><?php echo l('wc');?></span><div>7,16 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>14,90 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>18,17 m<label>2</label></div></li>
+									
+							<?php } else if ($space==200) { ?>
+									<li><span><?php echo l('hall');?></span><div>7,92 m<label>2</label></div></li>
+									<li><span><?php echo l('s1');?></span><div>36,28 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>18,82 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>17,12 m<label>2</label></div></li>
+									<li><span><?php echo l('bedroom');?></span><div>14,55 m<label>2</label></div></li>
+									
+									<li><span><?php echo l('wc');?></span><div>5,1 m<label>2</label></div></li>
+									<li><span><?php echo l('balcony');?></span><div>81,70 m<label>2</label></div></li>
+									
                              <?php }  ?>
 								</div>
 							</div>
@@ -235,11 +282,11 @@
 						<div class="RightBitImage">
 							<div class="Image">
                             <?php if($space==84.2){?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/84.2/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<a href="https://mziurigardens.ge/files/flats/apartments/84.2/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/84.2/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==54.4) { ?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/54.4/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/46.30/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<a href="https://mziurigardens.ge/files/flats/apartments/54.4/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/54.4/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==48.6) { ?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/48.6/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<a href="https://mziurigardens.ge/files/flats/apartments/48.6/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/48.6/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==68.60) { ?>
 								<a href="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/68.60/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==70.90) { ?>
@@ -255,12 +302,24 @@
                             <?php } else if ($space==46) { ?>
 								<a href="https://mziurigardens.ge/files/flats/apartments/46/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/46/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==48.8) { ?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/48.8/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/46/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<a href="https://mziurigardens.ge/files/flats/apartments/48.8/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/48.8/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==43) { ?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/43/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/46/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<a href="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
                             <?php } else if ($space==67.3) { ?>
-								<a href="https://mziurigardens.ge/files/flats/apartments/67.3/main2.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/main2.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
-                            <?php }  ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/67.3/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/67.3/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+								<?php } else if ($space==60) { ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/60/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/60/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+							<?php } else if ($space==48.5) { ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/48.5/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/48.5/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+							<?php } else if ($space==90) { ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/90/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/90/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+							<?php } else if ($space==115) { ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/115/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/115/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+							<?php } else if ($space==200) { ?>
+								<a href="https://mziurigardens.ge/files/flats/apartments/200/main.jpg?<?php echo time(); ?>" class="fancybox"><img src="https://mziurigardens.ge/files/flats/apartments/200/main.jpg?<?php echo time(); ?>" class="img-responsive"/></a>
+							
+							
+							<?php }  ?>
 							</div>
 						</div>
 					</div>
@@ -276,22 +335,15 @@
 					<?php if($space==84.2){?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/84.2/84.2-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments//84.2/84.2-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-3?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-3.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments//84.2/84.2-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments//84.2/84.2-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
@@ -327,15 +379,15 @@
                     <?php } else if ($space==48.6) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.6/48.6-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.6/48.6-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.6/48.6-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.6/48.6-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
@@ -458,95 +510,88 @@
 					<?php } else if ($space==66) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/66/66-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/66-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/66/66-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/66-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/66/66-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/66-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/66/66-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/66-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/66/66-3?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/66/66-3?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="Item">
-							<a href="https://mziurigardens.ge/files/drafts/66?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/66?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/drafts/66.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/66.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
                     <?php } else if ($space==72.8) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-3?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-3?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-3.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/72.8/72.8-3.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/drafts/72-8?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/72-8?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/drafts/72-8.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/72-8.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
                     <?php } else if ($space==46) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/drafts/46?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/46?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/drafts/46.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/46.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
                     <?php } else if ($space==48.8) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.8/48.8-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.8/48.8-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/46/46-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/46/46-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.8/48.8-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.8/48.8-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
@@ -560,51 +605,155 @@
                     <?php } else if ($space==43) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/43.0/43-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/43.0/43-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/drafts/43?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/43?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/drafts/43.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/43.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<?php } else if ($space==60) { ?>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/60/60-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/60/60-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/60/60-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/60/60-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/drafts/60.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/60.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<?php } else if ($space==90) { ?>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/90/90-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/90/90-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/90/90-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/90/90-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/drafts/90.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/90.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<?php } else if ($space==48.5) { ?>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.5/48.5-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.5/48.5-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/48.5/48.5-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/48.5/48.5-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/drafts/48.5.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/48.5.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<?php } else if ($space==115) { ?>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/115/115-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/115/115-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/115/115-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/115/115-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/drafts/115.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/115.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<?php } else if ($space==200) { ?>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/200/200-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/200/200-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/flats/apartments/200/200-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/200/200-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="Item">
+							<a href="https://mziurigardens.ge/files/drafts/200.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/200,jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
                     <?php } else if ($space==67.3) { ?>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-1?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-1?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/67.3/67.3-1.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/67.3/67.3-1.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-2?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-2?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/flats/apartments/67.3/67.3-2.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/67.3/67.3-2.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
+
 					<div class="col-sm-2">
 						<div class="Item">
-							<a href="https://mziurigardens.ge/files/flats/apartments/65.0/65-3?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/flats/apartments/65.0/65-3?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="Item">
-							<a href="https://mziurigardens.ge/files/drafts/67-3?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
-								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/67-3?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
+							<a href="https://mziurigardens.ge/files/drafts/67-3.jpg?<?php echo time(); ?>" class="fancybox" data-fancybox="group1">
+								<div class="Image"><img src="https://mziurigardens.ge/files/drafts/67-3.jpg?<?php echo time(); ?>" class="img-responsive" alt="" title=""/></div>
 							</a>
 						</div>
 					</div>
